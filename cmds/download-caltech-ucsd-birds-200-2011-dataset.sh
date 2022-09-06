@@ -9,15 +9,15 @@ cd Caltech-UCSD-Birds-200-2011
 
 # Download the images.
 echo "Downloading images (1.1GB) ..."
-wget http://www.vision.caltech.edu/visipedia-data/CUB-200-2011/CUB_200_2011.tgz
+wget https://data.caltech.edu/tindfiles/serve/1239ea37-e132-42ee-8c09-c383bb54e7ff/
 
 # Download masks (birds segmentations)
 echo "Downloading segmentation (37MB) ..."
-wget http://www.vision.caltech.edu/visipedia-data/CUB-200-2011/segmentations.tgz
+wget https://data.caltech.edu/tindfiles/serve/471cf5a5-8904-4b0d-978d-4fa2a8b14dc2/
 
 # Downlaod the readme
-echo "Downloading README.txt ..."
-wget http://www.vision.caltech.edu/visipedia-data/CUB-200-2011/README.txt
+# echo "Downloading README.txt ..."
+# wget http://www.vision.caltech.edu/visipedia-data/CUB-200-2011/README.txt
 
 
 echo "Finished downloading  Caltech-UCSD-Birds-200-2011 dataset."
