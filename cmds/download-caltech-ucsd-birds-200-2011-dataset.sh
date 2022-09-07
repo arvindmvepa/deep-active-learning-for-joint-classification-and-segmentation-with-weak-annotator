@@ -9,11 +9,11 @@ cd Caltech-UCSD-Birds-200-2011
 
 # Download the images.
 echo "Downloading images (1.1GB) ..."
-wget https://data.caltech.edu/tindfiles/serve/1239ea37-e132-42ee-8c09-c383bb54e7ff/
+wget -O CUB_200_2011.tgz https://data.caltech.edu/tindfiles/serve/1239ea37-e132-42ee-8c09-c383bb54e7ff/
 
 # Download masks (birds segmentations)
 echo "Downloading segmentation (37MB) ..."
-wget https://data.caltech.edu/tindfiles/serve/471cf5a5-8904-4b0d-978d-4fa2a8b14dc2/
+wget -O segmentations.tgz https://data.caltech.edu/tindfiles/serve/471cf5a5-8904-4b0d-978d-4fa2a8b14dc2/
 
 # Downlaod the readme
 # echo "Downloading README.txt ..."
