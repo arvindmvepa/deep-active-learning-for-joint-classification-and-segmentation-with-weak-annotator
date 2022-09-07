@@ -2720,25 +2720,8 @@ def get_device(args):
     Return:
         torch.device() object.
     """
-    if "HOST_XXX" in os.environ.keys():
-        if os.environ['HOST_XXX'] == 'laptop':
-            device = torch.device(
-                "cuda:0" if torch.cuda.is_available() else "cpu")
-        elif os.environ['HOST_XXX'] in ['lab', 'gsys', 'ESON']:
-            device = torch.device(
-                "cuda:" + args.cudaid if torch.cuda.is_available() else "cpu")
-        else:
-            raise ValueError("Unknown host.")
 
-    elif "CC_CLUSTER" in os.environ.keys():
-        device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-    else:
-        raise ValueError("Unknown host.")
-
-    if torch.cuda.is_available():
-        torch.cuda.set_device(int(args.cudaid))
-
-    return device
+    return "cuda:0" if torch.cuda.is_available() else "cpu"
 
 
 def load_pre_pretrained_model(model,
