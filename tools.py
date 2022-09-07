@@ -2844,7 +2844,7 @@ def get_rootpath_2_dataset(args):
     the host.
     """
     datasetname = args.dataset
-    baseurl = "/content"
+    baseurl = "/content/datasets"
 
     if datasetname == "bach-part-a-2018":
         baseurl = join(baseurl, "ICIAR-2018-BACH-Challenge")
